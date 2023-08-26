@@ -53,7 +53,7 @@ def getWeather():
     
     
     #weather
-    api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=744db8885b4d319daa57288ec425076c"
+    api = "API KEY"
     
     json_data = requests.get(api).json()
     condition = json_data['weather'][0]['main']
@@ -73,7 +73,7 @@ def getWeather():
 
 
 #search box
-Search_image = PhotoImage(file = "C:/Users/Tanul Tripathi/Videos/Captures/Copy of search.png")
+Search_image = PhotoImage(file = "PATH")
 myimage = Label(image = Search_image)
 myimage.place(x = 20, y = 20)
 
@@ -81,19 +81,19 @@ textfield = tk.Entry(root, justify = "center", width = 17, font = ("poppins", 25
 textfield.place(x = 50, y = 40)
 textfield.focus()
 
-Search_icon = PhotoImage(file = "C:/Users/Tanul Tripathi/Videos/Captures/Copy of search_icon.png")
+Search_icon = PhotoImage(file = "PATH")
 myimage_icon = Button(image = Search_icon, borderwidth = 0, cursor = "hand2", bg = "#404040", command = getWeather)
 myimage_icon.place(x = 400, y =34)
 
 
 #logo
-Logo_image = PhotoImage(file = "C:/Users/Tanul Tripathi/Videos/logo.png")
+Logo_image = PhotoImage(file = "PATH")
 logo = Label(image = Logo_image)
 logo.place(x = 150, y = 120)
 
 
 #Bottom box
-Frame_image = PhotoImage(file = "C:/Users/Tanul Tripathi/Videos/Captures/Copy of box.png")
+Frame_image = PhotoImage(file = "PATH")
 frame_img = Label(image = Frame_image)
 frame_img.pack(padx = 5, pady = 5, side = BOTTOM)
 
